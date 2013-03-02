@@ -6,7 +6,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'MetaTrans plugin for ultralingia.net.';
+abstract 'MetaTrans plugin for ultralingua.net.';
 author 'Jan Pomikalek <xpomikal@fi.muni.cz>';
 author 'Michal Špaček <skim@cpan.org>';
 license 'perl-5';
