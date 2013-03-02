@@ -1,0 +1,37 @@
+---
+abstract: 'MetaTrans plugin for ultralingia.net.'
+author:
+  - 'Jan Pomikalek <xpomikal@fi.muni.cz>'
+  - 'Michal Špaček <skim@cpan.org>'
+build_requires:
+  English: 0
+  ExtUtils::MakeMaker: 6.36
+  File::Object: 0.05
+  Test::More: 0
+  Test::NoWarnings: 0
+  Test::Pod: 0
+  Test::Pod::Coverage: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.36
+distribution_type: module
+dynamic_config: 1
+generated_by: 'Module::Install version 1.06'
+license: perl-5
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: MetaTrans-UltralinguaNet
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  Encode: 0
+  HTTP::Request: 0
+  MetaTrans: 1.06
+  URI::Escape: 0
+resources:
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=MetaTrans-UltralinguaNet
+  homepage: https://github.com/tupinek/MetaTrans-UltralinguaNet
+  repository: git://github.com/tupinek/MetaTrans-UltralinguaNet
+version: 1.06
