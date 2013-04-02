@@ -48,7 +48,7 @@ sub new
     $self = bless $self, $class;
 
     # set supported languages
-    $self->set_languages("eng", "fre", "spa", "ger", "ita", "por", "lat", "epo");
+    $self->set_languages("eng", "epo", "fre", "ger", "ita", "lat", "por", "spa");
 
     # ulralingua.net enables translating from English to any of supported
     # languages...
@@ -61,8 +61,8 @@ sub new
     # French <-> Spanish
     # French <-> German
     # French <-> Italian
-    $self->set_dir_1_to_spec("fre", "spa", "ger", "ita");
-    $self->set_dir_spec_to_1("fre", "spa", "ger", "ita");
+    $self->set_dir_1_to_spec("fre", "ger", "ita", "spa");
+    $self->set_dir_spec_to_1("fre", "ger", "ita", "spa");
 
     # ...
     # Spanish <-> German
