@@ -21,13 +21,13 @@ is_deeply(
 	\@ret,
 	[
 		'eng',
+		'epo',
 		'fre',
-		'spa',
 		'ger',
 		'ita',
-		'por',
 		'lat',
-		'epo',
+		'por',
+		'spa',
 	],
 	'Translation languages.',
 );
@@ -36,17 +36,16 @@ is_deeply(
 @ret = $obj->get_dest_lang_codes_for_src_lang_code('eng');
 is_deeply(
 	\@ret,
-	['fre', 'spa', 'ger', 'ita', 'por', 'lat', 'epo'],
-	'Translation direction eng -> eng, eng -> spa, eng -> get, '.
-		'eng -> ita, eng -> por, eng -> lat, eng -> epo.',
+	['epo', 'fre', 'ger', 'ita', 'lat', 'por', 'spa'],
+	'Translation direction eng -> epo, ger, ita, lat, por, spa.',
 );
 
 # Test.
 @ret = $obj->get_dest_lang_codes_for_src_lang_code('fre');
 is_deeply(
 	\@ret,
-	['eng', 'spa', 'ger', 'ita'],
-	'Translation direction fre -> eng, fre -> spa, fre -> ger, fre -> ita.',
+	['eng', 'ger', 'ita', 'spa'],
+	'Translation direction fre -> eng, ger, ita, spa.',
 );
 
 # Test.
@@ -54,7 +53,7 @@ is_deeply(
 is_deeply(
 	\@ret,
 	['eng', 'fre', 'ger', 'por'],
-	'Translation direction spa -> eng, spa -> fre, spa -> ger, spa -> por.',
+	'Translation direction spa -> eng, fre, ger, por.',
 );
 
 # Test.
@@ -62,7 +61,7 @@ is_deeply(
 is_deeply(
 	\@ret,
 	['eng', 'fre', 'spa'],
-	'Translation direction ger -> eng, ger -> fre, ger -> spa.',
+	'Translation direction ger -> eng, fre, spa.',
 );
 
 # Test.
@@ -70,7 +69,7 @@ is_deeply(
 is_deeply(
 	\@ret,
 	['eng', 'fre'],
-	'Translation direction ita -> eng, ita -> fre.',
+	'Translation direction ita -> eng, fre.',
 );
 
 # Test.
@@ -78,7 +77,7 @@ is_deeply(
 is_deeply(
 	\@ret,
 	['eng', 'spa'],
-	'Translation direction por -> eng, por -> spa.',
+	'Translation direction por -> eng, spa.',
 );
 
 # Test.
