@@ -222,3 +222,5 @@ under the same terms as Perl itself.
 
 L<MetaTrans>, L<MetaTrans::Base>, L<MetaTrans::Languages>,
 L<HTTP::Request>, L<URI::Escape>
+
+=cut
