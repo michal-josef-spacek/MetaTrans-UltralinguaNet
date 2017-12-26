@@ -1,3 +1,5 @@
+=encoding utf8
+
 =head1 NAME
 
 MetaTrans::UltralinguaNet - MetaTrans plug-in for L<http://ultralingua.net/>

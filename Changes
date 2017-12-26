@@ -1,6 +1,7 @@
 1.06
  - Add LICENSE file.
  - Add myself to doc.
+ - Add utf8 to doc.
  - First version (moved from MetaTrans perl module).
  - Rewrite to author tests.
  - Update Module::Install to 1.18 version.
