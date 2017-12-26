@@ -1,4 +1,5 @@
 1.06
+ - Add LICENSE file.
  - First version (moved from MetaTrans perl module).
  - Rewrite to author tests.
  - Update Module::Install to 1.18 version.
