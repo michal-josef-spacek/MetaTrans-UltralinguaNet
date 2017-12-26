@@ -16,6 +16,7 @@ author_requires 'Test::Pod' => 0;
 author_requires 'Test::Pod::Coverage' => 0;
 license 'perl-5';
 name 'MetaTrans-UltralinguaNet';
+readme_from 'UltralinguaNet.pm';
 recursive_author_tests('xt');
 requires 'Encode' => 0;
 requires 'HTTP::Request' => 0;

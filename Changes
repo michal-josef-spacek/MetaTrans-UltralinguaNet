@@ -1,5 +1,6 @@
 1.06
  - Add LICENSE file.
+ - Add README file.
  - Add myself to doc.
  - Add utf8 to doc.
  - First version (moved from MetaTrans perl module).

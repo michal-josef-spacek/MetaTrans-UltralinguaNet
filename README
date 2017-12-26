@@ -1,0 +1,49 @@
+NAME
+    MetaTrans::UltralinguaNet - MetaTrans plug-in for
+    <http://ultralingua.net/>
+
+CONSTRUCTOR METHODS
+    MetaTrans::UltralinguaNet->new(%options)
+        This method constructs a new MetaTrans::UltralinguaNet object and
+        returns it. All %options are passed to "MetaTrans::Base->new". The
+        method also sets supported translation directions and the
+        "host_server" attribute.
+
+METHODS
+    Methods are inherited from "MetaTrans::Base". Following methods are
+    overriden:
+
+    $plugin->create_request($expression, $src_lang_code, $dest_lang_code)
+        Create and return a "HTTP::Request" object to be used for retrieving
+        translation of the $expression from $src_lang_code language to
+        $dest_lang_code language.
+
+    $plugin->process_response($contents, $src_lang_code, $dest_lang_code)
+        Process the server response contents. Return the result of the
+        translation in an array of following form:
+
+            (expression_1, translation_1, expression_2, translation_2, ...)
+
+BUGS
+    Please report any bugs or feature requests to
+    "bug-metatrans@rt.cpan.org", or through the web interface at
+    <http://rt.cpan.org>. I will be notified, and then you'll automatically
+    be notified of progress on your bug as I make changes.
+
+AUTHOR
+    Jan Pomikalek, "<xpomikal@fi.muni.cz>",
+
+    Michal Josef Špaček, "<skim@cpan.org>".
+
+COPYRIGHT & LICENSE
+    Copyright 2004 Jan Pomikalek, All Rights Reserved.
+
+    Copyright 2017 Michal Josef Špaček, All Rights Reserved.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO
+    MetaTrans, MetaTrans::Base, MetaTrans::Languages, HTTP::Request,
+    URI::Escape
+
