@@ -1,2 +1,3 @@
 1.06
  - First version (moved from MetaTrans perl module).
+ - Update Module::Install to 1.18 version.
